@@ -1,0 +1,17 @@
+/* css */
+section {
+  margin-bottom: 50px;
+}
+section ul {
+  display: block;
+  clear:both;
+}
+ul.horizon li {
+  float:left;
+  margin-right: 30px;
+}
+
+button {
+  display: block;
+  clear: both;
+}

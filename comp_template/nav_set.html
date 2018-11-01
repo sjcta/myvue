@@ -1,0 +1,5 @@
+    <ul class="navi" :class="{horizon: isHorizon}">
+    <li v-for="(item, index) in items">
+      <a v-bind:href="item.url">{{item.title}}</a>
+    </li>
+    </ul>

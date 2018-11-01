@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen,print" />
+  <script type="text/javascript" src="js/vue.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="js/my_components.js"></script>
+</head>
+
+  <body>
+
+    <!-- Template -->
+    <div class="templates">
+      <template id="navTemp">
+          <ul class="navi" :class="{horizon: isHorizon}">
+          <li v-for="(item, index) in items">
+            <a v-bind:href="item.url">{{item.title}}</a>
+          </li>
+          </ul>
+          <slot></slot>
+      </template>
+
+      <template id="buttonTemp">
+          <button><slot></slot></button>
+      </template>
+
+    </div>
+    <!-- //Template -->
+
+    <h1>VUE Component Test</h1>
+    <div id="App">
+
+      <h2 v-text="title"></h2>
+      <nav-set :items="myNavItems">This is slot text !</nav-set>
+      <nav-set :items="myNavItems2" :is-horizon="true">
+        <bt-set>test2</bt-set>
+      </nav-set>
+
+      <bt-set>test 3</bt-set>
+
+      <test-set></test-set>
+
+      <div>{{newsBody[0]['title']}}</div>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/test.js"></script>
+
+  </body>
+</html>
