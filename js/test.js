@@ -8,9 +8,9 @@ new Vue({
   data: {
     title:'This is a title for VUE test.',
     myNavItems: [
-      { title: 'Foo', url:'#1' },
-      { title: 'Bar', url:'#2' },
-      { title: 'show', url:'#3' }
+      { title: 'First Navi', url:'#1' },
+      { title: 'Sec Navi', url:'#2' },
+      { title: 'Last Navi', url:'#3' }
     ],
     myNavItems2: [
       { title: 'abc', url:'#abc' },
