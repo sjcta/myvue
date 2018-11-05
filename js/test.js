@@ -13,9 +13,9 @@ new Vue({
       { title: 'Last Navi', url:'#3' }
     ],
     myNavItems2: [
-      { title: 'abc', url:'#abc' },
-      { title: 'ddd', url:'#ddd' },
-      { title: 'eee', url:'#eee' }
+      { title: '1st navi', url:'#abc' },
+      { title: '2nd navi', url:'#ddd' },
+      { title: '3rd navi', url:'#eee' }
     ],
     myName: '<h2>hello Jeson</h2>',
     newsBody: [],
